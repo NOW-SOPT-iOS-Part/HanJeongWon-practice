@@ -2,7 +2,7 @@
 //  ItemCollectionViewCell.swift
 //  34th-SOPT-2nd-Seminar
 //
-//  Created by HanJW on 4/26/24.
+//  Created by HanJW on 4/20/24.
 //
 
 import UIKit
@@ -38,7 +38,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     
     private lazy var heartButton: UIButton = {
         let button = UIButton()
-        button.setImage(.love, for: .normal)
+//        button.setImage(.love, for: .normal)
         button.setImage(UIImage(systemName: "heart.fill"), for: .selected)
         button.addTarget(self, action: #selector(heartButtonDidTap), for: .touchUpInside)
         return button

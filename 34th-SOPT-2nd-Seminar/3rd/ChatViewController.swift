@@ -2,7 +2,7 @@
 //  ChatViewController.swift
 //  34th-SOPT-2nd-Seminar
 //
-//  Created by HanJW on 4/26/24.
+//  Created by HanJW on 4/20/24.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import SnapKit
 
 final class ChatViewController: UIViewController {
     
-    private let chatList = ChatModel.dummy()
+//    private let chatList = ChatModel.dummy()
     private let tableView = UITableView(frame: .zero, style: .plain)
     
     override func viewDidLoad() {
@@ -36,7 +36,7 @@ final class ChatViewController: UIViewController {
     
     private func setDelegate() {
         tableView.delegate = self
-        tableView.dataSource = self
+//        tableView.dataSource = self
     }
 }
 
@@ -46,14 +46,14 @@ extension ChatViewController: UITableViewDelegate {
     }
 }
 
-extension ChatViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chatList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ChatTableViewCell.identifier, for: indexPath) as? ChatTableViewCell else { return UITableViewCell() }
-        cell.dataBind(chatList[indexPath.row])
-        return cell
-    }
-}
+//extension ChatViewController: UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return chatList.count
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: ChatTableViewCell.identifier, for: indexPath) as? ChatTableViewCell else { return UITableViewCell() }
+//        cell.dataBind(chatList[indexPath.row])
+//        return cell
+//    }
+//}

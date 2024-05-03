@@ -2,7 +2,7 @@
 //  ChatTableViewCell.swift
 //  34th-SOPT-2nd-Seminar
 //
-//  Created by HanJW on 4/26/24.
+//  Created by HanJW on 4/20/24.
 //
 
 import UIKit
@@ -77,12 +77,12 @@ final class ChatTableViewCell: UITableViewCell {
     }
 }
 
-extension ChatTableViewCell {
-    func dataBind(_ chatData: ChatModel) {
-        profileImageView.image = chatData.profileImg
-        nameLabel.text = chatData.name
-        placeLabel.text = chatData.place
-        chatLabel.text = chatData.message
-        itemImageView.image = chatData.itemImg
-    }
-}
+//extension ChatTableViewCell {
+//    func dataBind(_ chatData: ChatModel) {
+//        profileImageView.image = chatData.profileImg
+//        nameLabel.text = chatData.name
+//        placeLabel.text = chatData.place
+//        chatLabel.text = chatData.message
+//        itemImageView.image = chatData.itemImg
+//    }
+//}

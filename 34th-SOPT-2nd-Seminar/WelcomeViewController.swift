@@ -48,7 +48,7 @@ final class WelcomeViewController: UIViewController {
     
     private func bindID() {
         guard let idText = id else { return }
-        self.welcomeLabel.text = "\(idText)님 \n반가워요!"
+        self.welcomeLabel.text = "\(idText)님\n반가워요!"
     }
     
     func setLabelText(id: String?) {
